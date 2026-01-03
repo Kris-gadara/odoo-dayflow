@@ -179,7 +179,7 @@ class Payroll(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     
     class Meta:
-        ordering = ['-effective_date']
+        ordering = ['-effective_date', '-created_at']
         verbose_name = 'Payroll'
         verbose_name_plural = 'Payroll Records'
     
